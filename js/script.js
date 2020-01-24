@@ -39,10 +39,6 @@ const resetInput = () => {
   form.reset();
 };
 const sendData = () => {
-  // data !== undefined
-  // ? createFormData()
-  // : null
-
   if (data !== undefined) {
     createFormData();
   }

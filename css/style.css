@@ -7,7 +7,6 @@
   font-family: "Montserrat-Regular";
   src: url("../assets/fonts/montserrat/Montserrat-Regular.ttf") format("ttf");
 }
-
 :root {
   --ingeniaOrange: rgb(244, 115, 32);
   --darkGray: rgb(37, 37, 37);
@@ -113,7 +112,6 @@ ul {
   background-color: var(--ingeniaOrange);
 }
 .middler :last-child() {
-  /* .middler p { */
   margin: 0px 5px;
 }
 .middler h2 {
@@ -180,7 +178,6 @@ ul {
 .location-action select:focus {
   outline: none;
 }
-
 .location-cards {
   margin: auto;
   width: 80%;
@@ -219,15 +216,6 @@ ul {
   font-size: 3vh;
   margin: 0px 15px;
 }
-/* .location-half2 {
-  border-left: gray 1px solid;
-} */
-/* .location-half1 .location-card {
-  text-align: right;
-} */
-/* .location-half2 .l-card_Name {
-  flex-direction: row-reverse;
-} */
 .location-half1,
 .location-half2 {
   width: 100%;
@@ -367,7 +355,6 @@ ul {
     padding: 0;
   }
 }
-
 @media (min-width: 576px) {
   .middler {
     padding-top: 10vh;
@@ -394,9 +381,7 @@ ul {
     bottom: 100vh;
   }
 }
-/* de 768px o más */
-@media (min-width: 768px) {
-}
+background-color: red;
 /* de 992px o más */
 @media (min-width: 992px) {
   .form {
@@ -411,12 +396,10 @@ ul {
     align-self: center;
     padding-top: 15px;
   }
-
   .city-info h1 {
     font-size: 8vh;
   }
   .middler {
-    background-color: red;
     padding-top: 20vh;
   }
   .location-cards {
