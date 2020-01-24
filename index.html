@@ -16,33 +16,50 @@
     <!-- Main -->
     <div class="main">
       <!-- Top-->
-      <div class="navbar">
-        <img src="" alt="ingenia logo " />
+      <!-- <div class="navbar">
+        <div class="navbar-img">
+          <img src="/assets/logo_ingenia.png" alt="ingenia logo " />
+        </div>
         <ul>
           <li>ABOUT US</li>
           <li>OUR WORK</li>
           <li>CONTACT</li>
           <li>MANIFIESTO</li>
         </ul>
-      </div>
+      </div> -->
       <div class="top">
-        <div class="city">
-          <h1>mexico city</h1>
-          <div class="city-info">
-            <p>123 SEZAME STREET</p>
-            <p>mid text</p>
-            <p>bottom text</p>
-            <span>02 02 93 03 </span>
+        <div class="city city1">
+          <div class="city-info ">
+            <h1>Mexico City</h1>
+            <div class="city-card">
+              <h2>ANATOLE FRANCE 311</h2>
+              <p>Polanco, Miguel Hidalgo</p>
+              <p>11560 México D.F.</p>
+              <span> 50 22 09 00</span>
+            </div>
           </div>
         </div>
-        <div class="city">
-          <h1>mexico city</h1>
-          <div class="city-info">
-            <p>123 SEZAME STREET</p>
-            <p>mid text</p>
-            <p>bottom text</p>
-            <span>02 02 93 03 </span>
+        <div class="city city2">
+          <div class="city-info ">
+            <h1>Washington D.C.</h1>
+            <div class="city-card">
+              <h2>1200 18TH STREET, NW</h2>
+              <p>Suite 700</p>
+              <p>Washington DC 20036 USA</p>
+              <span>50 22 09 00</span>
+            </div>
           </div>
+        </div>
+        <div class="navbar">
+          <div class="navbar-img">
+            <img src="/assets/logo_ingenia.png" alt="ingenia logo " />
+          </div>
+          <ul>
+            <li>ABOUT US</li>
+            <li>OUR WORK</li>
+            <li>CONTACT</li>
+            <li>MANIFIESTO</li>
+          </ul>
         </div>
       </div>
       <!-- Mid -->
@@ -59,7 +76,11 @@
           <form id="form" name="form">
             <div class="form-row">
               <p class="dont-show">Please fill al the information</p>
-              <img src="" alt="bullet 1" />
+              <img
+                class="bullet"
+                src="/assets/bg/bullet_1.png"
+                alt="bullet 1"
+              />
               <input
                 minlength="0"
                 type="text"
@@ -76,7 +97,11 @@
               />
             </div>
             <div class="form-row">
-              <img src="" alt="bullet 2" />
+              <img
+                class="bullet"
+                src="/assets/bg/bullet_2.png"
+                alt="bullet 2"
+              />
               <input
                 minlength="0"
                 type="text"
@@ -88,8 +113,14 @@
               placeholder="Phone" />
             </div>
             <div class="form-row">
-              <img src="" alt="bullet 3" />
-              <p>Tell us about your challenge or opportunity</p>
+              <p>
+                <img
+                  class="bullet"
+                  src="/assets/bg/bullet_3.png"
+                  alt="bullet 3"
+                />
+                Tell us about your challenge or opportunity
+              </p>
               <textarea
                 id="comment"
                 name="comment"
@@ -97,7 +128,9 @@
                 cols="50"
               ></textarea>
             </div>
-            <input type="submit" value="Submit" />
+            <div class="form-row">
+              <input class="submit" type="submit" value="SEND" />
+            </div>
           </form>
         </div>
         <div class="locations">
@@ -113,41 +146,63 @@
             </p>
           </div>
           <div class="location-cards">
-            <div class="location-card l-card_1 ">
-              <span class="small">Mexico city</span>
-              <div class="l-card_Name">
-                <p>Name of Place</p>
-                <img src="" alt="burger" />
+            <div class="location-half1">
+              <div class="location-card  ">
+                <span class="small">Mexico city</span>
+                <br />
+                <div class="l-card_Name">
+                  <div>
+                    <p>Name of Place</p>
+                  </div>
+                  <div class="burger">
+                    <img src="/assets/icons/burger.png" alt="burger" />
+                  </div>
+                </div>
+                <br />
+                <span>123 Main street</span>
+                <p>amazing burgers, imprompteau jazz trios</p>
               </div>
-              <span>123 Main street</span>
-              <p>amazing burgers, imprompteau jazz trios</p>
+              <div class="location-card  ">
+                <span class="small">Mexico city</span>
+                <br />
+                <div class="l-card_Name">
+                  <p>Name of Place</p>
+                  <div class="burger">
+                    <img src="/assets/icons/burger.png" alt="burger" />
+                  </div>
+                </div>
+                <br />
+                <span>123 Main street</span>
+                <p>amazing burgers, imprompteau jazz trios</p>
+              </div>
             </div>
-            <div class="location-card l-card_2 ">
-              <span class="small">Mexico city</span>
-              <div class="l-card_Name">
-                <p>Name of Place</p>
-                <img src="" alt="burger" />
+            <div class="location-half2">
+              <div class="location-card ">
+                <span class="small">Mexico city</span>
+                <br />
+                <div class="l-card_Name">
+                  <p>Name of Place</p>
+                  <div class="burger">
+                    <img src="/assets/icons/burger.png" alt="burger" />
+                  </div>
+                </div>
+                <br />
+                <span>123 Main street</span>
+                <p>amazing burgers, imprompteau jazz trios</p>
               </div>
-              <span>123 Main street</span>
-              <p>amazing burgers, imprompteau jazz trios</p>
-            </div>
-            <div class="location-card l-card_3">
-              <span class="small">Mexico city</span>
-              <div class="l-card_Name">
-                <p>Name of Place</p>
-                <img src="" alt="burger" />
+              <div class="location-card ">
+                <span class="small">Mexico city</span>
+                <br />
+                <div class="l-card_Name">
+                  <p>Name of Place</p>
+                  <div class="burger">
+                    <img src="/assets/icons/burger.png" alt="burger" />
+                  </div>
+                </div>
+                <br />
+                <span>123 Main street</span>
+                <p>amazing burgers, imprompteau jazz trios</p>
               </div>
-              <span>123 Main street</span>
-              <p>amazing burgers, imprompteau jazz trios</p>
-            </div>
-            <div class="location-card l-card_4">
-              <span class="small">Mexico city</span>
-              <div class="l-card_Name">
-                <p>Name of Place</p>
-                <img src="" alt="burger" />
-              </div>
-              <span>123 Main street</span>
-              <p>amazing burgers, imprompteau jazz trios</p>
             </div>
           </div>
         </div>
@@ -157,7 +212,7 @@
       <div class="footer">
         <div class="footer-navbar">
           <div class="terms">
-            <p>2014 ingenia group</p>
+            <span> &#174; 2014 ingenia group</span>
           </div>
           <div class="footer-menu">
             <ul>
@@ -172,14 +227,25 @@
         <div class="footer-contact">
           <div class="contact">
             <div class="contact-card">
-              <span>USA</span>
+              <div class="contact-country">
+                <div class="country-img imgUSA">
+                  <img src="/assets/icons/countrys.png" alt="" />
+                </div>
+                <p>USA</p>
+              </div>
               <p>1200 12th Street</p>
               <p>Śuite 700</p>
               <p>Washington DC 10202 USA</p>
               <p>91281934</p>
             </div>
             <div class="contact-card">
-              <span>USA</span>
+              <div class="contact-country">
+                <div class="country-img imgMX">
+                  <img src="/assets/icons/countrys.png" alt="" />
+                </div>
+                <p>USA</p>
+              </div>
+
               <p>1200 12th Street</p>
               <p>Śuite 700</p>
               <p>Washington DC 10202 USA</p>
@@ -198,16 +264,25 @@
               </ul>
             </div>
             <div class="social-media">
-              <img src="" alt="twitter" />
-              <img src="" alt="facebook" />
-              <img src="" alt="youtube" />
-              <img src="" alt="Instagram" />
+              <div class="social-media_button sMedia-twitter">
+                <img src="/assets/btns/btns.png" alt="twitter" />
+              </div>
+              <div class="social-media_button sMedia-facebook">
+                <img src="/assets/btns/btns.png" alt="facebook" />
+              </div>
+              <div class="social-media_button sMedia-youtube">
+                <img src="/assets/btns/btns.png" alt="youtube" />
+              </div>
+              <div class="social-media_button sMedia-linkedin">
+                <img src="/assets/btns/btns.png" alt="Instagram" />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </body>
+  <script src="js/client.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
   <script src="js/script.js"></script>
