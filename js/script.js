@@ -2,7 +2,6 @@ const form = document.getElementById("form");
 
 const url = "http://ingenia.com/snippets/test/contact.php";
 let data;
-console.log(typeof data, "declarado desde el inicio");
 
 const getDestructuredElementsByIds = document =>
   new Proxy({}, { get: (_, id) => document.getElementById(id) });
@@ -27,9 +26,8 @@ const validateForm = () => {
     ? (sendData(),
       (alertDiv.classList.remove("do-show"),
       alertDiv.classList.add("dont-show")))
-    : (console.log("lena todo"),
-      (alertDiv.classList.remove("dont-show"),
-      alertDiv.classList.add("do-show")));
+    : (alertDiv.classList.remove("dont-show"),
+      alertDiv.classList.add("do-show"));
 };
 const createFormData = () => {
   let data = new FormData();
@@ -50,7 +48,6 @@ const sendData = () => {
   data.append("email", email.value);
   data.append("phone", phone.value);
   data.append("comment", comment.value);
-
   console.log(...data);
   axios({
     method: "post",
