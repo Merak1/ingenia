@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta content="width=device-width" name="viewport" /> -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="shortcut icon"
@@ -16,17 +17,6 @@
     <!-- Main -->
     <div class="main">
       <!-- Top-->
-      <!-- <div class="navbar">
-        <div class="navbar-img">
-          <img src="../assets/logo_ingenia.png" alt="ingenia logo " />
-        </div>
-        <ul>
-          <li>ABOUT US</li>
-          <li>OUR WORK</li>
-          <li>CONTACT</li>
-          <li>MANIFIESTO</li>
-        </ul>
-      </div> -->
       <div class="top">
         <div class="city city1">
           <div class="city-info ">
@@ -62,6 +52,8 @@
           </ul>
         </div>
       </div>
+
+
       <!-- Mid -->
       <div class="middle">
         <div class="middler">
@@ -75,7 +67,7 @@
         <div class="form">
           <form id="form" name="form">
             <div class="form-row">
-              <p class="dont-show">Please fill al the information</p>
+              <p id="alert-message" class="dont-show">Please fill al the information</p>
               <img
                 class="bullet"
                 src="./assets/bg/bullet_1.png"
@@ -124,8 +116,7 @@
               <textarea
                 id="comment"
                 name="comment"
-                rows="10"
-                cols="50"
+                
               ></textarea>
             </div>
             <div class="form-row">
@@ -148,7 +139,7 @@
           <div class="location-cards">
             <div class="location-half1">
               <div class="location-card  ">
-                <span class="small">Mexico city</span>
+                <span class="small">MEXICO CITY</span>
                 <br />
                 <div class="l-card_Name">
                   <div>
@@ -163,7 +154,6 @@
                 <p>amazing burgers, imprompteau jazz trios</p>
               </div>
               <div class="location-card  ">
-                <span class="small">Mexico city</span>
                 <br />
                 <div class="l-card_Name">
                   <p>Name of Place</p>
@@ -178,7 +168,7 @@
             </div>
             <div class="location-half2">
               <div class="location-card ">
-                <span class="small">Mexico city</span>
+                <span class="small">WASHINGTON DC</span>
                 <br />
                 <div class="l-card_Name">
                   <p>Name of Place</p>
@@ -191,7 +181,6 @@
                 <p>amazing burgers, imprompteau jazz trios</p>
               </div>
               <div class="location-card ">
-                <span class="small">Mexico city</span>
                 <br />
                 <div class="l-card_Name">
                   <p>Name of Place</p>
@@ -207,79 +196,86 @@
           </div>
         </div>
       </div>
+
+
       <!--  -->
 
       <div class="footer">
-        <div class="footer-navbar">
-          <div class="terms">
-            <span> &#174; 2014 ingenia group</span>
-          </div>
-          <div class="footer-menu">
-            <ul>
-              <li>About Us</li>
-              <li>Our Work</li>
-              <li>Blog</li>
-              <li>Jobs</li>
-              <li>Contact</li>
-            </ul>
-          </div>
-        </div>
         <div class="footer-contact">
-          <div class="contact">
-            <div class="contact-card">
-              <div class="contact-country">
-                <div class="country-img imgUSA">
-                  <img src="./assets/icons/countrys.png" alt="" />
-                </div>
-                <p>USA</p>
+          <div class="left">
+            <div class="footerleftcontact  ">
+              <div class="terms">
+                <span> &#174; 2014 ingenia group</span>
               </div>
-              <p>1200 12th Street</p>
-              <p>Śuite 700</p>
-              <p>Washington DC 10202 USA</p>
-              <p>91281934</p>
             </div>
-            <div class="contact-card">
-              <div class="contact-country">
-                <div class="country-img imgMX">
-                  <img src="./assets/icons/countrys.png" alt="" />
+            <div class="footerleftcontact  ">
+              <div class="contact">
+                <div class="contact-card">
+                  <div class="contact-country">
+                    <div class="country-img imgUSA">
+                      <img src="./assets/icons/countrys.png" alt="" />
+                    </div>
+                    <p>USA</p>
+                  </div>
+                  <p>1200 12th Street</p>
+                  <p>Śuite 700</p>
+                  <p>Washington DC 10202 USA</p>
+                  <p>91281934</p>
                 </div>
-                <p>USA</p>
+                <div class="contact-card">
+                  <div class="contact-country">
+                    <div class="country-img imgMX">
+                      <img src="./assets/icons/countrys.png" alt="" />
+                    </div>
+                    <p>MEXICO</p>
+                  </div>
+                  <p>Anatole France 311</p>
+                  <p>Polanco, Miguel Hidalgo</p>
+                  <p>11560 México D.F.</p>
+                  <p>50550900</p>
+                </div>
               </div>
-
-              <p>1200 12th Street</p>
-              <p>Śuite 700</p>
-              <p>Washington DC 10202 USA</p>
-              <p>91281934</p>
             </div>
           </div>
-          <div class="about">
-            <div class="footer-terms">
-              <ul>
-                <li>
-                  <p>Terms of use</p>
-                </li>
-                <li>
-                  <p>Privacy Policy</p>
-                </li>
-              </ul>
-            </div>
-            <div class="social-media">
-              <div class="social-media_button sMedia-twitter">
-                <img src="./assets/btns/btns.png" alt="twitter" />
+          <div class="right">
+            <div class="about">
+              <div class="footer-menu">
+                <ul>
+                  <li>About Us</li>
+                  <li>Our Work</li>
+                  <li>Blog</li>
+                  <li>Jobs</li>
+                  <li>Contact</li>
+                </ul>
               </div>
-              <div class="social-media_button sMedia-facebook">
-                <img src="./assets/btns/btns.png" alt="facebook" />
+              <div class="footer-terms">
+                <ul>
+                  <li>
+                    <p>Terms of use</p>
+                  </li>
+                  <li>
+                    <p>Privacy Policy</p>
+                  </li>
+                </ul>
               </div>
-              <div class="social-media_button sMedia-youtube">
-                <img src="./assets/btns/btns.png" alt="youtube" />
-              </div>
-              <div class="social-media_button sMedia-linkedin">
-                <img src="./assets/btns/btns.png" alt="Instagram" />
+              <div class="social-media">
+                <div class="social-media_button sMedia-twitter">
+                  <img src="./assets/btns/btns.png" alt="twitter" />
+                </div>
+                <div class="social-media_button sMedia-facebook">
+                  <img src="./assets/btns/btns.png" alt="facebook" />
+                </div>
+                <div class="social-media_button sMedia-youtube">
+                  <img src="./assets/btns/btns.png" alt="youtube" />
+                </div>
+                <div class="social-media_button sMedia-linkedin">
+                  <img src="./assets/btns/btns.png" alt="Instagram" />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      
     </div>
   </body>
   <script src="js/client.js"></script>

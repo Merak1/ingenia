@@ -1,6 +1,8 @@
 const form = document.getElementById("form");
 
 const url = "http://ingenia.com/snippets/test/contact.php";
+let data;
+console.log(typeof data, "declarado desde el inicio");
 
 const getDestructuredElementsByIds = document =>
   new Proxy({}, { get: (_, id) => document.getElementById(id) });
@@ -9,51 +11,44 @@ const { name, lastName, email, phone, comment } = getDestructuredElementsByIds(
   document
 );
 
-name.addEventListener("input", function(event) {
-  // isValidEmail = name.checkValidity();
-
-  if (name.validity.valid) {
-    // okButton.disabled = false;
-    name.setCustomValidity("I am expecting an e-mail address!");
-  } else {
-    // okButton.disabled = true;
-    email.setCustomValidity("");
-  }
-});
-
-// okButton.addEventListener("click", function(event) {
-//   signUpForm.submit();
-// });
-
+const alertDiv = document.getElementById("alert-message");
 const validateForm = () => {
-  if (name.validity.tooShort) {
-    console.log("es valido ");
-    // okButton.disabled = false;
-    // name.setCustomValidity("I am expecting an e-mail address!");
-  } else {
-    console.log("no es valido");
-    // okButton.disabled = true;
-    // email.setCustomValidity("");
-  }
-  // });
+  const nameIsValid = name.value.length !== 0;
+  const lastNameIsValid = lastName.value.length !== 0;
+  const emailIsValid = email.value.length !== 0;
+  const phoneIsValid = phone.value.length !== 0;
+  const commentIsValid = comment.value.length !== 0;
+
+  nameIsValid &&
+  lastNameIsValid &&
+  emailIsValid &&
+  phoneIsValid &&
+  commentIsValid === true
+    ? (sendData(),
+      (alertDiv.classList.remove("do-show"),
+      alertDiv.classList.add("dont-show")))
+    : (console.log("lena todo"),
+      (alertDiv.classList.remove("dont-show"),
+      alertDiv.classList.add("do-show")));
 };
-// const isValidName = name.checkValidity();
-// const isValidLastName = lastName.checkValidity();
-// const isValidEmail = email.checkValidity();
-// const isValidPhone = phone.checkValidity();
-// const isValidComment = comment.checkValidity();
-// console.log(isValidEmail, "is valid ocmment");
-
-// const { isValidName,
-//   isValidLastName,
-//   isValidEmail,
-//   isValidPhone,
-//   isValidComment, } = this.checkValidity
-// };
-
-const sendData = () => {
+const createFormData = () => {
   let data = new FormData();
+  return data;
+};
+const resetInput = () => {
+  form.reset();
+};
+const sendData = () => {
+  // data !== undefined
+  // ? createFormData()
+  // : null
 
+  if (data !== undefined) {
+    createFormData();
+  }
+
+  data = new FormData();
+  console.log("data", data);
   const fullname = name.value + " " + lastName.value;
   data.append("fullname", fullname);
   data.append("email", email.value);
@@ -70,9 +65,14 @@ const sendData = () => {
     .then(response => {
       const responseData = response.data;
       console.log(`Succsesfully posted : `, responseData);
+      resetInput();
     })
     .catch(error => console.error(error));
+  //El método reset input solamente quedaría en caso que la petición fuera correcta, pero por motivos demostrativos
+  //la pongo en catch para que se vea en acción
+  resetInput();
 };
+
 const formEvent = form.addEventListener("submit", event => {
   event.preventDefault();
   validateForm();
